@@ -1,0 +1,87 @@
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+        /* Hide hamburger */
+    }
+
+    /* Show Navigation Links Normally */
+    .navigation {
+        display: flex !important;
+        /* Ensure links are always visible */
+        flex-direction: row;
+        gap: 20px;
+        position: static;
+        background: none;
+        width: auto;
+        padding: 0;
+        background-color: black;
+    }
+
+    .navigation li {
+        display: inline;
+    }
+
+    .navigation a {
+        padding: 10px 15px;
+    }
+
+    .top img {
+        object-fit: contain;
+        width: 200px;
+        height: auto;
+    }
+
+    .top {
+        display: flex;
+        justify-content: center;
+    }
+
+    #og {
+        background-color: #006DAA;
+        color: white;
+        padding: 15px;
+        border-radius: 0.5rem;
+    }
+
+    aside h2 {
+        background-color: #006DAA;
+        color: white;
+        padding: 15px;
+        border-radius: 0.5rem;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    .card {
+        margin: 0.5rem;
+        border: 2px solid rgb(0 0 0 / .1);
+        max-width: 100%;
+    }
+
+    aside {
+        margin: 1rem;
+        border: 2px solid rgb(0 0 0 / .2);
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+    }
+
+    section {
+        margin: 1rem;
+        border: 2px solid rgb(0 0 0 / .2);
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+    }
+
+    .card img {
+        object-fit: contain;
+        /* width: 200px; */
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr auto;
+    }
+
+}
