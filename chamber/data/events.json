@@ -1,0 +1,20 @@
+{
+    "events": [
+        {
+            "name": "Uganda Tech Summit 2025",
+            "date": "2025-09-15T09:00:00"
+        },
+        {
+            "name": "Kampala Startup Expo",
+            "date": "2025-10-10T10:00:00"
+        },
+        {
+            "name": "East Africa AI & Machine Learning Conference",
+            "date": "2025-11-05T08:30:00"
+        },
+        {
+            "name": "Digital Innovation Hackathon",
+            "date": "2025-12-01T09:00:00"
+        }
+    ]
+}

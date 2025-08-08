@@ -7,8 +7,7 @@
 
     <meta property="og:title" content="Directory | Chamber Kampala">
     <meta property="og:type" content="website">
-    <meta property="og:image"
-        content="https://bruno-ui374.github.io/wdd231/chamber/images/kampala.webp">
+    <meta property="og:image" content="https://bruno-ui374.github.io/wdd231/chamber/images/kampala.webp">
     <meta property="og:url" content="https://bruno-ui374.github.io/wdd231/chamber/directory.html">
     <meta property="og:description" content="Kampala Chamber of Commerce, Join us to get more information">
     <meta property="fb:app_id" content="your-app-id-here">
@@ -32,21 +31,20 @@
 
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/directory.css" />
+    <link rel="stylesheet" href="styles/index.css" />
 
     <script type="module" src="../scripts/app.js"></script>
-    <script src="../scripts/modules/directory.js" defer></script>
+    <script src="../scripts/modules/index.js" defer></script>
 
 
     <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="directory-page">
+<body id="index-page">
     <header>
         <nav>
             <div class="box-logo-header">
-                <img class="logo-chamber" src="../chamber/images/kampala.webp"
-                    alt="Logo Chamber Kampala" />
+                <img class="logo-chamber" src="../chamber/images/kampala.webp" alt="Logo Chamber Kampala" />
                 <h1 class="nameHeader">Kampala City<br>Chamber of Commerce</h1>
                 <button name="navigation button" id="menu" aria-label="Toggle menu"></button>
             </div>
@@ -58,21 +56,41 @@
             </ul>
         </nav>
     </header>
-
     <main>
-        <h2 class="Main-title">Directory</h2>
-        <div class="button-box">
-            <button title="List view" class='mybtn activebtn' id="list-view-btn"><i class='fas fa-list'></i></button>
-            <button title="Grid view" class='mybtn' id="grid-view-btn"><i class='fas fa-border-all'></i></button>
-        </div>
+        <section class="hero-main-box">
+            <picture class="hero-box-img">
+                <source media="(max-width: 600px)" srcset="images/small.webp">
+                <source media="(max-width: 800px)" srcset="images/medium.webp">
+                <source media="(max-width: 1200px)" srcset="images/big.webp">
+                <source media="(min-width: 1201px)" srcset="images/huge.webp">
+                <img class="hero-home-img" src="images/medium.webp" alt="Kampala city">
+            </picture>
 
-        <div id="directory-box"></div>
+            <div class="call-to-action">
+                <h3>Join the Kampala Chamber of Commerce today!</h3>
+                <p>Enhance your business network, access exclusive resources, and drive local economic growth.</p>
+                <p>Want to be a member? Click here and start making a difference.</p>
+                <button class="join-us" name="join" onclick="window.location.href='/chamber/join.html'">Join us</button>
+            </div>
+        </section>
+        <section class="event-main-box">
+            <article class="event-main">
+                <h2>Current Events</h2>
+                <div id="events-list">
+                </div>
+            </article>
+            <article class="weather-main" id="weather-main"></article>
+            <article class="weather-forecast" id="weather-forecast"></article>
+        </section>
+        <section class="spotlights-main-box"></section>
     </main>
+
     <footer>
         <p>&copy;<span id="currentyear">Lorem</span> Bruno Martin Ssematimba |
             Kampala</p>
         <p id="lastModified">Lorem ipsum</p>
     </footer>
+
 </body>
 
 </html>
