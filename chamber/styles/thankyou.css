@@ -1,0 +1,74 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#menu {
+    display: none;
+}
+
+.thank-you-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1712101d;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    font-family: var(--open-sans-paragraph-font);
+    color: var(--paragraph-color-on-white);
+    font-weight: bold;
+}
+
+.thank-you-section h2 {
+    font-size: var(--font-size-extra-large);
+    margin-bottom: 20px;
+    color: var(--headline-color-on-white);
+    font-family: var(--poppins-heading-font);
+    font-weight: var(--poppins-bold-font-weight);
+}
+
+.thank-you-section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: var(--font-size-base);
+}
+
+.discover-link,
+.css-button-sharp--grey {
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.discover-link {
+    color: var(--headline-color-on-white);
+}
+
+.thank-you-section a:hover {
+    color: var(--oxford-blue);
+}
+
+.css-button-sharp--grey {
+    color: var(--headline-color-on-color);
+    min-width: 130px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 2px solid #495057;
+    background: #495057;
+}
+
+.css-button-sharp--grey:hover {
+    background: #fff;
+    color: #495057;
+}
+
+.discover-link:hover {
+    font-weight: bold;
+    text-decoration: underline black;
+}

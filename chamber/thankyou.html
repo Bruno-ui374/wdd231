@@ -8,13 +8,13 @@
     <meta property="og:title" content="Directory | Chamber Kampala">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://bruno-ui374.github.io/wdd231/chamber/images/kampala.webp">
-    <meta property="og:url" content="https://bruno-ui374.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="https://bruno-ui374.github.io/wdd231/chamber/thankyou.html">
     <meta property="og:description" content="Kampala Chamber of Commerce, Join us to get more information">
     <meta property="fb:app_id" content="your-app-id-here">
 
 
     <title>Directory | Kampala Chamber of Commerce</title>
-    <meta name="description" content="Chamber Home, Kampala" />
+    <meta name="description" content="Chamber Thankyou, Kampala" />
     <meta name="author" content="Bruno Martin Ssematimba" />
 
     <link rel="icon" type="image/png" href="images/kampala.webp">
@@ -31,16 +31,16 @@
 
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/thankyou.css" />
 
     <script type="module" src="../scripts/app.js"></script>
-    <script src="../scripts/modules/index.js" defer></script>
+    <script src="../scripts/modules/thankyou.js" defer></script>
 
 
     <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="index-page">
+<body id="directory-page">
     <header>
         <nav>
             <div class="box-logo-header">
@@ -56,33 +56,29 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="hero-main-box">
-            <picture class="hero-box-img">
-                <source media="(max-width: 600px)" srcset="images/small.webp">
-                <source media="(max-width: 800px)" srcset="images/medium.webp">
-                <source media="(max-width: 1200px)" srcset="images/big.webp">
-                <source media="(min-width: 1201px)" srcset="images/huge.webp">
-                <img class="hero-home-img" src="images/medium.webp" alt="Kampala city">
-            </picture>
 
-            <div class="call-to-action">
-                <h3>Join the Kampala Chamber of Commerce today!</h3>
-                <p>Enhance your business network, access exclusive resources, and drive local economic growth.</p>
-                <p>Want to be a member? Click here and start making a difference.</p>
-                <button class="join-us" name="join" onclick="window.location.href='/chamber/join.html'">Join us</button>
+    <main class="thank-you-container">
+
+
+        <section class="thank-you-section">
+            <h2>Thank You!</h2>
+            <p>We appreciate your interest in joining our organization. Your application has been successfully
+                submitted.</p>
+            <div class="form-data-display">
+                <h3>Your Submitted Information:</h3>
+                <p><strong>First Name:</strong> <span id="first-name"></span></p>
+                <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Mobile Number:</strong> <span id="mobile-number"></span></p>
+                <p><strong>Business Name:</strong> <span id="business-name"></span></p>
+                <p><strong>Submission Date:</strong> <span id="timestamp"></span></p>
             </div>
+
+
+            <p>If you're curious or want to explore further, feel free to <a class="discover-link"
+                    href="discover.html">discover more</a>.</p>
+            <a href="index.html" class="css-button-sharp--grey">Return to Home</a>
         </section>
-        <section class="event-main-box">
-            <article class="event-main">
-                <h2>Current Events</h2>
-                <div id="events-list">
-                </div>
-            </article>
-            <article class="weather-main" id="weather-main"></article>
-            <article class="weather-forecast" id="weather-forecast"></article>
-        </section>
-        <section class="spotlights-main-box"></section>
     </main>
 
     <footer>
