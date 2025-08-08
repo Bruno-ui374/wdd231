@@ -1,0 +1,65 @@
+[
+    {
+        "name": "MTN Uganda",
+        "address": "Plot 69-71, Jinja Road, Kampala, Uganda",
+        "phone": "+256 312 212333",
+        "website": "https://www.mtn.co.ug",
+        "icon": "mtn.png",
+        "membership": 3,
+        "description": "Leading telecom company in Uganda offering voice, data, and mobile money services."
+    },
+    {
+        "name": "Airtel Uganda",
+        "address": "Kampala Road, Airtel House, Kampala, Uganda",
+        "phone": "+256 750 100100",
+        "website": "https://www.airtel.co.ug",
+        "icon": "airtel.png",
+        "membership": 2,
+        "description": "Telecommunications company with strong mobile data and Airtel Money services."
+    },
+    {
+        "name": "Stanbic Bank Uganda",
+        "address": "Crested Towers, 17 Hannington Road, Kampala, Uganda",
+        "phone": "+256 312 224600",
+        "website": "https://www.stanbicbank.co.ug",
+        "icon": "stanbic.png",
+        "membership": 3,
+        "description": "Commercial bank offering personal and business banking, loans, and digital solutions."
+    },
+    {
+        "name": "Jude Colour Solutions",
+        "address": "Nasser Road, Kampala, Uganda",
+        "phone": "+256 414 667890",
+        "website": "https://judecoloursolutions.com",
+        "icon": "jude.jpg",
+        "membership": 1,
+        "description": "Digital printing and branding company based in downtown Kampala."
+    },
+    {
+        "name": "Ruparelia Group",
+        "address": "Crane Chambers, Kampala Road, Kampala, Uganda",
+        "phone": "+256 414 231000",
+        "website": "https://www.rupareliagroup.com",
+        "icon": "ruparelia.jpg",
+        "membership": 3,
+        "description": "A conglomerate with interests in real estate, education, hospitality, and banking."
+    },
+    {
+        "name": "SafeBoda",
+        "address": "Kyambogo, Kampala, Uganda",
+        "phone": "+256 200 906200",
+        "website": "https://www.safeboda.com/ug/",
+        "icon": "safeboda.png",
+        "membership": 2,
+        "description": "Ride-hailing and delivery platform offering safe and affordable transport in Kampala."
+    },
+    {
+        "name": "Uganda Breweries Limited",
+        "address": "Port Bell Road, Luzira, Kampala, Uganda",
+        "phone": "+256 414 320100",
+        "website": "https://www.ugandabreweries.com",
+        "icon": "ubl.jpg",
+        "membership": 2,
+        "description": "Leading beverage manufacturer in Uganda producing beer, spirits, and soft drinks."
+    }
+]

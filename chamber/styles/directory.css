@@ -1,0 +1,172 @@
+/* Directory Page */
+main {
+    margin: 0 10px;
+}
+
+.Main-title {
+    color: var(--headline-color-on-white);
+    text-align: center;
+    font-size: var(--font-size-large);
+    margin: 20px;
+    padding: 5px 0;
+}
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--white);
+    gap: 10px;
+    width: 110px;
+    height: 40px;
+    margin: 0 auto;
+    border: 2px solid var(--king-kong);
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--king-kong);
+}
+
+button {
+    border: 1px solid var(--king-kong);
+    border-radius: 5px;
+    padding: 5px;
+    width: 50px;
+    text-transform: uppercase;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--white); 
+    color: var(--king-kong); 
+}
+
+button.activebtn {
+    background-color: var(--king-kong); 
+    color: var(--white);
+}
+
+.fa-border-all,
+.fa-list {
+    color: inherit; 
+}
+
+button:hover {
+    background-color: var(--king-kong);
+    color: var(--white);
+}
+
+#directory-box.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 20px;
+}
+
+.card-box {
+    padding: 20px;
+    border: 2px solid var(--king-kong);
+    border-radius: 10px;
+    margin: 10px;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.logo {
+    object-fit: cover;
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: var(--paragraph-color-on-color);
+}
+
+.card-box h3, 
+.card-box ul li {
+    color: var(--king-kong);
+    font-size: var(--font-size-base);
+}
+
+.card-box ul {
+    padding: 10px;
+}
+
+td a:link, td a,
+.card-box a:link, .card-box a {
+    text-decoration: none;
+    color: var(--oxford-blue);
+}
+
+td a:visited,
+.card-box a:visited {
+    text-decoration: underline;
+}
+
+td a:hover,
+.card-box a:hover {
+    font-weight: bold;
+    color: var(--yale-blue);
+}
+
+td a:active,
+.card-box a:active {
+    text-decoration: underline;
+}
+
+#directory-box.list-view {
+    display: block;
+}
+
+#directory-box.list-view .card-box {
+    margin: 30px;
+}
+
+@media (min-width: 860px) {
+
+    #directory-box.list-view {
+        display: table;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        border-collapse: separate;
+        border-spacing: 0 15px;
+    }
+
+    #directory-box.list-view .card-box {
+        display: table-row;
+        padding: 0;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+    }
+
+    #directory-box.list-view .card-box > * {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 15px;
+        background-color: var(--white);
+        border: 2px solid var(--king-kong);
+        border-radius: 10px;
+    }
+
+    #directory-box.list-view .card-box .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    #directory-box.list-view .card-box h3 {
+        font-size: 1.5rem;
+    }
+
+    #directory-box.list-view .card-box ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    #directory-box.list-view .card-box ul li {
+        font-size: 1rem;
+    }
+
+    #directory-box.list-view .card-box ul li a {
+        font-size: 1rem;
+        text-decoration: underline;
+        color: var(--oxford-blue);
+    }
+}
