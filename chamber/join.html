@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Directory | Chamber Kampala">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://bruno-ui374.github.io/wdd231/chamber/images/kampala.webp">
+    <meta property="og:url" content="https://bruno-ui374.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Kampala Chamber of Commerce, Join us to get more information">
+    <meta property="fb:app_id" content="your-app-id-here">
+
+
+    <title>Directory | Kampala Chamber of Commerce</title>
+    <meta name="description" content="Chamber directory, Kampala" />
+    <meta name="author" content="Bruno Martin Ssematimba" />
+
+    <link rel="icon" type="image/png" href="images/kampala.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap">
+    </noscript>
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+
+    <script type="module" src="../scripts/app.js"></script>
+    <script src="../scripts/modules/join.js" defer></script>
+
+
+    <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="join-page">
+    <header>
+        <nav>
+            <div class="box-logo-header">
+                <img class="logo-chamber" src="../chamber/images/kampala.webp" alt="Logo Chamber Kampala" />
+                <h1 class="nameHeader">Kampala City<br>Chamber of Commerce</h1>
+                <button name="navigation button" id="menu" aria-label="Toggle menu"></button>
+            </div>
+            <ul>
+                <li><a class="nav-a " href="./index.html">Home</a></li>
+                <li><a class="nav-a " href="./discover.html">Discover</a></li>
+                <li><a class="nav-a " href="./directory.html">Directory</a></li>
+                <li><a class="nav-a " href="./join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <form method="get" action="thankyou.html">
+            <h2 class="sub-title-form">Membership Application</h2>
+            <label class="name-lb">
+                Name:
+            </label>
+            <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required
+                placeholder="First">
+            <input type="text" name="lastName" title="Enter your first name" autocomplete="given-name" required
+                placeholder="Last">
+            <br><br>
+
+            <label>
+                Organizational Title:
+            </label>
+            <input type="text" name="organizationTitle" title="Enter your organizational title"
+                autocomplete="organization-title" pattern="[A-Za-z\s\-.,']{2,}" required>
+            <br><br>
+
+            <label>
+                Email Address:
+            </label>
+            <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                placeholder="example@email.com" required>
+            <br><br>
+
+            <label>
+                Mobile Phone Number:
+            </label>
+            <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required
+                placeholder="+256 770-456-7890">
+            <br><br>
+
+            <label>
+                Business/Organization Name:
+            </label>
+            <input type="text" name="organization" title="Enter your business or organization name"
+                autocomplete="organization" required>
+            <br><br>
+
+            <label>
+                Membership Level:
+            </label>
+            <select name="membershipLevel" required>
+                <option value="" disabled selected>Select a membership level</option>
+                <option value="NP">NP Membership (Non-Profit)</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select>
+            <br><br>
+
+            <label>
+                Business/Organization Description:
+            </label>
+            <textarea name="organizationDescription" title="Describe your business or organization" rows="4"
+                cols="50"></textarea>
+            <br><br>
+
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+            <button class="css-button-fully-rounded--grey" type="submit">Submit</button>
+
+            <br><br>
+        </form>
+
+        <section class="membership-container">
+            <h2 class="sub-title-member">Membership Levels</h2>
+
+            <div class="card">
+                <h3>Non Profit Membership Level</h3>
+                <button class="css-button-arrow--black" id="npButton"
+                    aria-label="Learn more about Non-Profit Membership">
+                    <span class="visually-hidden">Learn More</span>
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>Bronze Membership Level</h3>
+                <button class="css-button-arrow--black" id="bronzeButton"
+                    aria-label="Learn more about bronze Membership">
+                    <span class="visually-hidden">Learn More</span></button>
+            </div>
+
+            <div class="card">
+                <h3>Silver Membership Level</h3>
+                <button class="css-button-arrow--black" id="silverButton"
+                    aria-label="Learn more about silver Membership">
+                    <span class="visually-hidden">Learn More</span></button>
+            </div>
+
+            <div class="card">
+                <h3>Gold Membership Level</h3>
+                <button class="css-button-arrow--black" id="goldButton" aria-label="Learn more about gold Membership">
+                    <span class="visually-hidden">Learn More</span></button>
+            </div>
+
+            <section class="msg-box">
+                <div class="rotating-text">
+                    <h3 class="start-p">Become part of our</h3>
+                    <p>
+                        <span class="word alizarin">Awesome</span>
+                        <span class="word wisteria">Amazing</span>
+                        <span class="word peter-river">Incredible</span>
+                        <span class="word emerald">Fantastic</span>
+                        <span class="word sun-flower">Fabulous</span>
+                    </p>
+                    <h3 class="end-p">community!</h3>
+                </div>
+            </section>
+
+        </section>
+
+        <dialog id="npModal"></dialog>
+        <dialog id="bronzeModal"></dialog>
+        <dialog id="silverModal"></dialog>
+        <dialog id="goldModal"></dialog>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear">Lorem</span> Bruno Martin Ssematimba|
+            Kampala</p>
+        <p id="lastModified">Lorem ipsum</p>
+    </footer>
+
+</body>
+
+</html>

@@ -5,7 +5,7 @@
         "phone": "+256 312 212333",
         "website": "https://www.mtn.co.ug",
         "icon": "mtn.png",
-        "membership": 3,
+        "membership": "Gold",
         "description": "Leading telecom company in Uganda offering voice, data, and mobile money services."
     },
     {
@@ -14,7 +14,7 @@
         "phone": "+256 750 100100",
         "website": "https://www.airtel.co.ug",
         "icon": "airtel.png",
-        "membership": 2,
+        "membership": "Gold",
         "description": "Telecommunications company with strong mobile data and Airtel Money services."
     },
     {
@@ -23,7 +23,7 @@
         "phone": "+256 312 224600",
         "website": "https://www.stanbicbank.co.ug",
         "icon": "stanbic.png",
-        "membership": 3,
+        "membership": "Bronze",
         "description": "Commercial bank offering personal and business banking, loans, and digital solutions."
     },
     {
@@ -32,7 +32,7 @@
         "phone": "+256 414 667890",
         "website": "https://judecoloursolutions.com",
         "icon": "jude.jpg",
-        "membership": 1,
+        "membership": "Silver",
         "description": "Digital printing and branding company based in downtown Kampala."
     },
     {
@@ -41,7 +41,7 @@
         "phone": "+256 414 231000",
         "website": "https://www.rupareliagroup.com",
         "icon": "ruparelia.jpg",
-        "membership": 3,
+        "membership": "Bronze",
         "description": "A conglomerate with interests in real estate, education, hospitality, and banking."
     },
     {
@@ -50,7 +50,7 @@
         "phone": "+256 200 906200",
         "website": "https://www.safeboda.com/ug/",
         "icon": "safeboda.png",
-        "membership": 2,
+        "membership": "Silver",
         "description": "Ride-hailing and delivery platform offering safe and affordable transport in Kampala."
     },
     {
@@ -59,7 +59,7 @@
         "phone": "+256 414 320100",
         "website": "https://www.ugandabreweries.com",
         "icon": "ubl.jpg",
-        "membership": 2,
+        "membership": "Gold",
         "description": "Leading beverage manufacturer in Uganda producing beer, spirits, and soft drinks."
     }
 ]

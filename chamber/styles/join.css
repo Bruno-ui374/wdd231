@@ -1,0 +1,311 @@
+/* Join Page */
+/* Basic styles for form elements */
+
+main {
+    max-width: 859px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 1em;
+    margin: 0 auto;
+}
+
+.sub-title-form,
+.sub-title-member {
+    color: var(--headline-color-on-white);
+    font-size: var(--font-size-large);
+    text-align: center;
+}
+
+.sub-title-form {
+    margin: 10px;
+}
+
+.sub-title-member {
+    margin-top: 35px;
+}
+
+form {
+    min-width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid var(--king-kong);
+    border-radius: 10px;
+    background-color: #44393263;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.name-lb input {
+    display: inline-block;
+    width: 45%;
+    margin-right: 5px;
+}
+
+input,
+textarea,
+select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--king-kong);
+    border-radius: 5px;
+}
+
+.membership-container {
+    display: block;
+}
+
+.membership-container h3 {
+    color: var(--headline-color-on-white);
+    font-size: var(--font-size-large);
+    margin: 10px;
+    text-align: center;
+}
+
+.card {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px var(--paragraph-background-color);
+}
+
+.card h3 {
+    color: var(--king-kong);
+}
+
+.card {
+    animation: animate 5s ease infinite;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+@keyframes animate {
+    0% {
+        background-color: #0049918e;
+    }
+
+    50% {
+        background-color: #0057ae90;
+    }
+
+    100% {
+        background-color: #14316374;
+    }
+}
+
+.card:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.card button {
+    margin: 0 auto;
+}
+
+.membership-levels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.membership-level {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.membership-level:hover {
+    background-color: #e9ecef;
+}
+
+.css-button-fully-rounded--grey {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #495057;
+    background: #495057;
+}
+
+.css-button-fully-rounded--grey:hover {
+    background: #fff;
+    color: #495057;
+}
+
+.css-button-arrow--black {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: #343a40;
+}
+
+.css-button-arrow--black:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.css-button-arrow--black:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.css-button-arrow--black:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}
+
+.msg-box {
+    margin: 30px;
+    display: flex;
+    align-content: center;
+}
+
+.rotating-text .start-p,
+.rotating-text .end-p {
+    font-size: var(--font-size-small);
+    text-align: center;
+}
+
+.rotating-text .start-p {
+    width: 140px;
+}
+
+.rotating-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--font-size-base);
+    color: var(--king-kong);
+    margin: 0 auto;
+}
+
+.rotating-text p {
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    height: auto;
+    padding-bottom: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+.rotating-text p .word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    font-weight: 900;
+}
+
+.rotating-text p .word .letter {
+    transform-origin: center center 25px;
+}
+
+.rotating-text p .word .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+.rotating-text p .word .letter.in {
+    transition: 0.38s ease;
+}
+
+.rotating-text p .word .letter.behind {
+    transform: rotateX(-90deg);
+}
+
+.alizarin {
+    color: #a51707;
+    /* Darker red */
+}
+
+.wisteria {
+    color: #5b057d;
+    /* Deeper purple */
+}
+
+.peter-river {
+    color: #033a72;
+    /* Stronger blue */
+}
+
+.emerald {
+    color: #055125;
+    /* Deeper green */
+}
+
+.sun-flower {
+    color: #695a1d;
+    /* Darker yellow */
+}
+
+dialog {
+    border: 1px solid var(--king-kong);
+    border-radius: 0.25rem;
+    padding: 2.5rem;
+    background-color: #dadce0f4;
+    box-shadow: 0 0 3rem var(--king-kong);
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--king-kong);
+    background-color: var(--king-kong);
+    color: var(--white);
+}
