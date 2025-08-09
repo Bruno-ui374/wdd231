@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Directory | Chamber Kampala">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://bruno-ui374.github.io/wdd231/chamber/images/kampala.webp">
+    <meta property="og:url" content="https://bruno-ui374.github.io/wdd231/chamber/discover.html">
+    <meta property="og:description" content="Kampala Chamber of Commerce, Join us to get more information">
+    <meta property="fb:app_id" content="your-app-id-here">
+
+
+    <title>Directory | Kampala Chamber of Commerce</title>
+    <meta name="description" content="Chamber Discover, Kampala" />
+    <meta name="author" content="Bruno Martin Ssematimba" />
+
+    <link rel="icon" type="image/png" href="images/kampala.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap">
+    </noscript>
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/thankyou.css" />
+
+    <script type="module" src="../scripts/app.js"></script>
+    <script src="../scripts/modules/discover.js" defer></script>
+
+
+    <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="discover-page">
+<header>
+    <nav>
+        <div class="box-logo-header">
+            <img class="logo-chamber" src="../chamber/images/kampala.webp" alt="Logo Chamber Kampala" />
+            <h1 class="nameHeader">Kampala City<br>Chamber of Commerce</h1>
+            <button name="navigation button" id="menu" aria-label="Toggle menu"></button>
+        </div>
+        <ul>
+            <li><a class="nav-a " href="./index.html">Home</a></li>
+            <li><a class="nav-a " href="./discover.html">Discover</a></li>
+            <li><a class="nav-a " href="./directory.html">Directory</a></li>
+            <li><a class="nav-a " href="./join.html">Join</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <main class="discover">
+        <section class="side-bar">
+            <article class="article-01">
+                <header>
+                    <h3>Demographics</h3>
+                </header>
+                <ul>
+                    <li><strong>Capital:</strong> Kampala</li>
+                    <li><strong>Currencies:</strong> Ugandan Shilling (UGX)</li>
+                    <li><strong>Official language:</strong> English, Swahili</li>
+                    <li><strong>Population:</strong> 1,680,800</li>
+                    <li><strong>Dialing code:</strong> +256</li>
+                </ul>
+            </article>
+            <article id="article-02" class="article-02">
+            </article>
+            <article class="article-03">
+                <table id="calendar">
+                    <caption></caption> <!-- Moved out of thead -->
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody> </tbody>
+                </table>
+            </article>
+
+        </section>
+        <section class="local-photos">
+            <figure>
+                <img data-src="images/flyover.webp" src="images/flyover.webp" alt="Kampala Flyover" class="lazy-image" loading="lazy">
+                <figcaption>Kampala Flyover</figcaption>
+            </figure>
+            <figure>
+                <img data-src="images/city.jpg" src="images/city.jpg" alt="Kampala City Center"
+                    class="lazy-image" loading="lazy">
+                <figcaption>Kampala City Center</figcaption>
+            </figure>
+            <figure>
+                <img data-src="images/Kololo.jpg" src="images/Kololo.jpg" alt="Kololo Independence Grounds"
+                    class="lazy-image" loading="lazy">
+                <figcaption>Kololo Independence Grounds</figcaption>
+            </figure>
+            <figure>
+                <img data-src="images/hill.jpg" src="images/hill.jpg" alt="Kampala Hill"
+                    class="lazy-image" loading="lazy">
+                <figcaption>Kampala Hill</figcaption>
+            </figure>
+            <figure>
+                <img data-src="images/taxi.jpg" src="images/taxi.jpg" alt="Kampala Taxi Park"
+                    class="lazy-image" loading="lazy">
+                <figcaption>Kampala Taxi Park</figcaption>
+            </figure>
+            <figure>
+                <img data-src="images/bank.jpg" src="images/bank.jpg" alt="Stanbic Bank Head Office Kampala"
+                    class="lazy-image" loading="lazy">
+                <figcaption>Stanbic Bank Head Office, Kampala</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear">Lorem</span> Bruno Martin Ssematimba |
+            Kampala</p>
+        <p id="lastModified">Lorem ipsum</p>
+    </footer>
+
+</body>
+
+</html>
