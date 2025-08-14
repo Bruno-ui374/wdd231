@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Find your dream home with our curated property listings including apartments, villas, and commercial spaces.">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Find Your Dream House | Homirx">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/finalproject/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Find Your Dream House | Homirx</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">HOMIRX <span>Living Solutions</span></div>
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#" class="add-properties-btn">Add Properties</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Let’s Find Your <br><span>Dream House.</span></h1>
+                <form class="search-form">
+                    <input type="text" placeholder="Keyword" aria-label="Keyword">
+                    <select aria-label="Category">
+                        <option>Select Category</option>
+                        <option>Commercial</option>
+                        <option>Villa</option>
+                        <option>Apartment</option>
+                    </select>
+                    <input type="text" placeholder="Location" aria-label="Location">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories">
+            <h2>Explore Apartment <span>Types</span></h2>
+            <div class="category-list">
+                <div class="category-card">Commercial</div>
+                <div class="category-card">Warehouse</div>
+                <div class="category-card">Villa</div>
+                <div class="category-card">Apartment</div>
+                <div class="category-card">Homestay</div>
+            </div>
+        </section>
+
+        <!-- Listings -->
+        <section class="listings">
+            <h2>Find Home Listing in Your Area</h2>
+            <div id="properties-container" class="properties"></div>
+        </section>
+
+        <!-- Top Locations -->
+        <section class="top-locations">
+            <h2>Our Top Location For You Property</h2>
+            <div class="location-images">
+                <img src="images/location1.jpg" alt="Location 1" loading="lazy">
+                <img src="images/location2.jpg" alt="Location 2" loading="lazy">
+                <img src="images/location3.jpg" alt="Location 3" loading="lazy">
+                <img src="images/location4.jpg" alt="Location 4" loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> HOMIRX Living Solutions. All rights reserved.</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="#">Video Demo</a></p>
+    </footer>
+</body>
+
+</html>
