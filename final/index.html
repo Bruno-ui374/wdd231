@@ -2,90 +2,215 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Find your dream home with our curated property listings including apartments, villas, and commercial spaces.">
-    <meta name="author" content="Your Name">
-    <meta property="og:title" content="Find Your Dream House | Homirx">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="images/og-image.jpg">
-    <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/finalproject/index.html">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Home Page | Homerix Real Estate" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://bruno-ui374.github.io/wdd231/final/images/homerix2.jpg" />
+    <meta property="og:url" content="https://bruno-ui374.github.io/wdd231/final/index.html" />
+    <meta property="og:description" content="Homerix - Your Trusted Real Estate Partner" />
+    <meta property="fb:app_id" content="your-app-id-here" />
 
-    <title>Find Your Dream House | Homirx</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <script type="module" src="scripts/main.js"></script>
+    <title>Homerix | Real Estate Limited</title>
+    <meta name="description" content="Homerix - Your Trusted Real Estate Partner" />
+    <meta name="author" content="Bruno Martin Ssematimba" />
+
+    <link rel="icon" type="image/webp" href="images/homerix2.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap">
+    </noscript>
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">HOMIRX <span>Living Solutions</span></div>
-            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
+    <header id="main-header">
+        <div class="logo">
+            <img src="images/homerix2.webp" alt="Homerix logo" class="logo-img" loading="lazy" />
+            <span class="logo-text">Homerix</span>
+        </div>
+
+        <nav>
+            <ul class="menu" id="main-menu">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <a href="#" class="add-properties-btn">Add Properties</a>
         </nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <svg viewBox="0 0 100 80" width="28" height="24" aria-hidden="true">
+                <rect width="100" height="10"></rect>
+                <rect y="30" width="100" height="10"></rect>
+                <rect y="60" width="100" height="10"></rect>
+            </svg>
+        </button>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Let’s Find Your <br><span>Dream House.</span></h1>
-                <form class="search-form">
-                    <input type="text" placeholder="Keyword" aria-label="Keyword">
-                    <select aria-label="Category">
-                        <option>Select Category</option>
-                        <option>Commercial</option>
-                        <option>Villa</option>
-                        <option>Apartment</option>
-                    </select>
-                    <input type="text" placeholder="Location" aria-label="Location">
-                    <button type="submit">Search</button>
-                </form>
+        <div class="slider" id="hero-slider" aria-roledescription="carousel">
+            <div class="list">
+                <div class="item active">
+                    <img src="images/home.webp" alt="Beautiful homes" loading="lazy" />
+                    <div class="content">
+                        <p>Beautiful</p>
+                        <h2>Homes</h2>
+                        <p>
+                            Discover elegant homes featuring modern architecture, spacious interiors, and lush gardens.
+                            Each property offers comfort, style, and the perfect setting for family living.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/villa.webp" alt="Villas" loading="lazy" />
+                    <div class="content">
+                        <p>Stunning</p>
+                        <h2>Villas</h2>
+                        <p>
+                            Experience luxury living in our exquisite villas, featuring breathtaking views, private
+                            pools, and
+                            spacious layouts. Each villa is designed for comfort and elegance, offering the perfect
+                            retreat for
+                            relaxation and entertaining.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/commercial.webp" alt="Commercial buildings" loading="lazy" />
+                    <div class="content">
+                        <p>Unique</p>
+                        <h2>Commercial</h2>
+                        <p>
+                            Explore distinctive commercial buildings designed for business success. Modern layouts,
+                            prime
+                            locations, and flexible spaces to suit various enterprises.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/apartment.webp" alt="Apartments" loading="lazy" />
+                    <div class="content">
+                        <p>Cozy</p>
+                        <h2>Apartments</h2>
+                        <p>
+                            Discover unique apartments that offer a blend of comfort and style. With modern amenities
+                            and prime
+                            locations, these apartments are perfect for urban living.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/warehouse.webp" alt="Warehouses" loading="lazy" />
+                    <div class="content">
+                        <p>Perfect</p>
+                        <h2>Warehouses</h2>
+                        <p>
+                            Discover versatile warehouses ideal for storage, logistics, and business operations. Secure,
+                            spacious,
+                            and easily accessible for all your commercial needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrows">
+                <button id="prev" aria-label="Previous slide">&laquo;</button>
+                <button id="next" aria-label="Next slide">&raquo;</button>
+            </div>
+
+            <div class="thumbnail" aria-hidden="false">
+                <div class="item active">
+                    <img src="images/home.webp" alt="Homes thumbnail" loading="lazy" />
+                    <div class="content">Homes</div>
+                </div>
+                <div class="item">
+                    <img src="images/villa.webp" alt="Villas thumbnail" loading="lazy" />
+                    <div class="content">Villas</div>
+                </div>
+                <div class="item">
+                    <img src="images/commercial.webp" alt="Commercial thumbnail" loading="lazy" />
+                    <div class="content">Commercial</div>
+                </div>
+                <div class="item">
+                    <img src="images/apartment.webp" alt="Apartments thumbnail" loading="lazy" />
+                    <div class="content">Apartments</div>
+                </div>
+                <div class="item">
+                    <img src="images/warehouse.webp" alt="Warehouses thumbnail" loading="lazy" />
+                    <div class="content">Warehouses</div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title fade-in">NEW ARRIVALS</h2>
+
+        <div id="products" class="products fade-in" aria-live="polite">
+        </div>
+
+        <section class="medium-section" aria-label="Information">
+            <div class="container why-choose-section">
+                <h3>Why choose Homerix</h3>
+                <p>Trusted local knowledge, transparent pricing and professional service on every listing.</p>
             </div>
         </section>
 
-        <!-- Categories -->
-        <section class="categories">
-            <h2>Explore Apartment <span>Types</span></h2>
-            <div class="category-list">
-                <div class="category-card">Commercial</div>
-                <div class="category-card">Warehouse</div>
-                <div class="category-card">Villa</div>
-                <div class="category-card">Apartment</div>
-                <div class="category-card">Homestay</div>
+        <section class="strengths-section fade-in" aria-labelledby="strengths-title">
+            <h2 id="strengths-title" class="section-title">Our Core Strengths</h2>
+            <div id="strengths-container" class="strengths-container">
             </div>
         </section>
 
-        <!-- Listings -->
-        <section class="listings">
-            <h2>Find Home Listing in Your Area</h2>
-            <div id="properties-container" class="properties"></div>
-        </section>
-
-        <!-- Top Locations -->
-        <section class="top-locations">
-            <h2>Our Top Location For You Property</h2>
-            <div class="location-images">
-                <img src="images/location1.jpg" alt="Location 1" loading="lazy">
-                <img src="images/location2.jpg" alt="Location 2" loading="lazy">
-                <img src="images/location3.jpg" alt="Location 3" loading="lazy">
-                <img src="images/location4.jpg" alt="Location 4" loading="lazy">
-            </div>
-        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> HOMIRX Living Solutions. All rights reserved.</p>
-        <p><a href="attributions.html">Attributions</a> | <a href="#">Video Demo</a></p>
+        <div class="footer-inner">
+            <div class="footer-column">
+                <h4>Homerix</h4>
+                <p>Your Trusted Real Estate Partner</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="discover.html">Properties</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Attributions</h4>
+                <ul>
+                    <li><a href="https://www.w3.org/Graphics/SVG/">Svgs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Follow</h4>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Bruno Martin&copy; <span id="year"></span> Homerix Real Estate Limited. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 

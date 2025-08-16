@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Contact Us | Homerix Real Estate" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/homerix2.jpg" />
+    <meta property="og:url" content="https://bruno-ui374.github.io/wdd231/final/contact.html" />
+    <meta property="og:description" content="Homerix - Your Trusted Real Estate Partner" />
+    <meta property="fb:app_id" content="your-app-id-here" />
+
+    <title>Contact | Homerix Real Estate</title>
+    <meta name="description" content="Homerix - Your Trusted Real Estate Partner" />
+    <meta name="author" content="Bruno Martin Ssematimba" />
+
+    <link rel="icon" type="image/webp" href="images/homerix2.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <script src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="logo">
+            <img src="images/homerix2.webp" alt="Homerix logo" class="logo-img" loading="lazy" />
+            <span class="logo-text">Homerix</span>
+        </div>
+
+        <nav>
+            <ul class="menu" id="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <svg viewBox="0 0 100 80" width="28" height="24" aria-hidden="true">
+                <rect width="100" height="10"></rect>
+                <rect y="30" width="100" height="10"></rect>
+                <rect y="60" width="100" height="10"></rect>
+            </svg>
+        </button>
+    </header>
+
+    <main>
+        <section id="contact-section" class="contact-section fade-in">
+            <div class="contact-form-wrapper">
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Name" required />
+                    <input type="email" id="email" name="email" placeholder="Email" required />
+                    <textarea id="message" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn btn-send">Send Us A Message</button>
+                </form>
+            </div>
+            <aside class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Reach out directly for any property inquiries, collaborations, or to discuss your housing
+                    requirements.</p>
+                <ul class="contact-details">
+                    <li class="contact-item">
+                        <span class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </span>
+                        <span>Email: <a href="mailto:info@homerix.com">info@homerix.com</a></span>
+                    </li>
+                    <li class="contact-item">
+                        <span class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span>Phone: +256 763 367 927</span>
+                    </li>
+                    <li class="contact-item">
+                        <span class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </span>
+                        <span>Charm Tower, Kampala, Uganda</span>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+        <div class="wrapper">
+            <a href="discover.html" style="--grid-area:cat-sport">
+                <p class="align-right">Modern Homes</p>
+                <img src="images/home.webp" loading="lazy">
+            </a>
+            <a href="discover.html" style="--grid-area:cat-tees">
+                <p>Luxury Villas</p>
+                <img src="images/villa.webp" loading="lazy">
+            </a>
+            <a href="discover.html" style="--grid-area:cat-hoodies">
+                <p>Spacious Warehouses</p>
+                <img src="images/warehouse.webp" loading="lazy">
+            </a>
+            <a href="discover.html" style="--grid-area:cat-ladies-shirts">
+                <p>Commercial Properties</p>
+                <img src="images/commercial.webp" loading="lazy">
+            </a>
+            <a href="discover.html" style="--grid-area:cat-youth">
+                <p>Cozy Apartments</p>
+                <img src="images/apartment.webp" loading="lazy">
+            </a>
+            <a href="discover.html" style="--grid-area:cat-kids">
+                <p>Family Living</p>
+                <img src="images/ville2.webp"
+                    loading="lazy">
+            </a>
+            <a href="discover.html" style="--grid-area:cat-cologne">
+                <p class="align-right">Urban Lofts</p>
+                <img src="images/apart5.webp"
+                    loading="lazy">
+            </a>
+            <a href="discover.html" style="--grid-area:cat-mens-shirts">
+                <p>Prime Locations</p>
+                <img src="images/ville.webp"
+                    loading="lazy">
+            </a>
+            <a href="discover.html" style="--grid-area:cat-intimate">
+                <p>Rental Units</p>
+                <img src="images/apartment.webp"loading="lazy">
+            </a>
+            <a href="#" style="--grid-area:banner" class="banner">
+                HOMERIX
+            </a>
+        </div>
+
+        <section id="info-cards" class="info-cards fade-in">
+            <div class="card working-hours-card">
+                <h2 class="card-title">Working Hours</h2>
+                <p class="card-description">Our office is open during these hours. Feel free to visit us or schedule an
+                    appointment for property viewings.</p>
+                <table class="hours-table">
+                    <tr>
+                        <th>Monday – Friday:</th>
+                        <td>9am – 5pm</td>
+                    </tr>
+                    <tr>
+                        <th>Saturday:</th>
+                        <td>9am – 2pm</td>
+                    </tr>
+                    <tr>
+                        <th>Sunday:</th>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card appointment-card">
+                <div class="phone-icon">
+                    <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="1.5" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z">
+                        </path>
+                    </svg>
+                </div>
+                <p class="phone-number">+256 763 367 927</p>
+                <p class="book-description">Schedule a Viewing</p>
+                <a href="tel:+256763367927" id="book-btn" class="btn btn-appointment">Call Us Now</a>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials fade-in">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-container">
+            </div>
+            <div class="testimonial-buttons">
+                <button id="prev-btn" aria-label="Previous Testimonial">&#10094;</button>
+                <button id="next-btn" aria-label="Next Testimonial">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-column">
+                <h4>Homerix</h4>
+                <p>Your Trusted Real Estate Partner</p>
+            </div>
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Follow</h4>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Homerix Real Estate Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

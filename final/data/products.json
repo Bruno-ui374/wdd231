@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "title": "Cozy Home",
+        "price": "$200,000",
+        "image": "images/ville.webp",
+        "badge": "New",
+        "link": "discover.html"
+    },
+    {
+        "id": 2,
+        "title": "Apartments",
+        "price": "$350,000",
+        "image": "images/ville2.webp",
+        "badge": "Hot deal",
+        "link": "discover.html"
+    },
+    {
+        "id": 3,
+        "title": "Villa House",
+        "price": "$500,000",
+        "image": "images/villa.webp",
+        "badge": "Sale",
+        "link": "discover.html"
+    }
+
+    
+]
