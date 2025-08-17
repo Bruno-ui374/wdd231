@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         initSlides();
     });
 
-    // ========== Sticky Header & Active Nav Link ==========
+   
     function handleScroll() {
         if (window.scrollY > 30) {
             header.classList.add('scrolled');
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     setActiveNavLink();
 
-    // ========== Slider Logic & SCROLL BUG FIX ==========
+    
     const sliderObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             isSliderVisible = entry.isIntersecting;
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // ========== Hamburger Menu Logic ==========
+ 
     if (hamburger && menu) {
         function closeMenu() {
             menu.classList.remove('show');
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ========== Dynamic Content Loading ==========
+   
     function escapeHtml(str) {
         if (str === null || str === undefined) return '';
         return String(str).replace(/[&<>"']/g, match => ({

@@ -137,7 +137,7 @@ header .menu a.active::after {
 }
 
 
-/* ---------- HERO (full-bleed slider) ---------- */
+
 .slider {
     position: relative;
     left: 50%;
@@ -181,7 +181,7 @@ header .menu a.active::after {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.18) 36%, rgba(0, 0, 0, 0.04) 62%, transparent 85%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent 50%);
     pointer-events: none;
 }
 
@@ -192,6 +192,7 @@ header .menu a.active::after {
     width: min(560px, 80%);
     z-index: 60;
     color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .slider .list .item .content p:nth-child(1) {
@@ -202,10 +203,13 @@ header .menu a.active::after {
     font-size: 0.85rem;
 }
 
+
 .slider .list .item .content h2 {
     font-size: clamp(28px, 8vw, 100px);
     margin: 0 0 6px 0;
     line-height: 1.02;
+    color: #dcb14a;
+    /* Updated color for the main heading */
 }
 
 .slider .list .item .content p {
@@ -412,7 +416,7 @@ header .menu a.active::after {
     text-transform: uppercase;
 }
 
-/* ---------- "View Details" Button Style ---------- */
+
 .btn {
     display: inline-block;
     background-color: var(--gold);
@@ -537,7 +541,13 @@ footer {
 .footer-column a {
     color: inherit;
     text-decoration: none;
-    opacity: 0.9;
+    opacity: 0.8;
+    transition: opacity 0.2s, color 0.2s;
+}
+
+.footer-column a:hover {
+    opacity: 1;
+    color: var(--gold);
 }
 
 .footer-bottom {
@@ -547,11 +557,6 @@ footer {
     opacity: 0.8;
 }
 
-/* ======================================================= */
-/* ========== Responsive Design & FIXES ========== */
-/* ======================================================= */
-
-/* Tablets and below */
 @media (max-width: 900px) {
     header {
         top: 0;
@@ -563,11 +568,11 @@ footer {
 
     .hamburger {
         display: block;
-        /* Show hamburger */
+      
     }
 
     header .menu {
-        /* This is the definitive fix for the menu bug */
+        
         display: flex;
         position: fixed;
         top: calc(var(--header-height) + 16px);
@@ -581,7 +586,7 @@ footer {
         z-index: 145;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 
-        /* Hide by default using a more robust method */
+        
         opacity: 0;
         visibility: hidden;
         transform: translateY(-10px);
@@ -604,24 +609,18 @@ footer {
 /* Mobile phones */
 @media (max-width: 700px) {
 
-    /* This is the definitive fix for the thumbnail visibility */
+    
     .thumbnail {
         padding: 0 10px;
         gap: 8px;
-        /* Reduce gap to fit more */
         justify-content: space-between;
-        /* Distribute items evenly */
         overflow-x: hidden;
-        /* Prevent horizontal scrolling */
     }
 
     .thumbnail .item {
         flex: 1;
-        /* Allow items to shrink and fill space */
         min-width: 0;
-        /* Override the default min-width */
         height: 80px;
-        /* A smaller, consistent height */
         font-size: 12px;
     }
 
@@ -631,7 +630,7 @@ footer {
     }
 }
 
-/* Very small screens */
+
 @media (max-width: 320px) {
     header .logo .logo-text {
         display: none;
@@ -651,7 +650,6 @@ footer {
     .arrows {
         top: auto;
         bottom: 120px;
-        /* Adjust for smaller thumbnails */
         left: 50%;
         transform: translateX(-50%);
         right: auto;
@@ -659,6 +657,6 @@ footer {
 
     .thumbnail .item {
         height: 65px;
-        /* Even smaller on tiny screens */
+        
     }
 }

@@ -23,6 +23,8 @@
 
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/contact.css" />
+
+    <script src="scripts/main.js" defer></script>
     <script src="scripts/contact.js" defer></script>
 </head>
 
@@ -56,6 +58,9 @@
                 <form id="contact-form">
                     <input type="text" id="name" name="name" placeholder="Name" required />
                     <input type="email" id="email" name="email" placeholder="Email" required />
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required />
+                    <input type="text" id="location" name="location" placeholder="Your Location (e.g., Mukono)"
+                        required />
                     <textarea id="message" name="message" placeholder="Message" required></textarea>
                     <button type="submit" class="btn btn-send">Send Us A Message</button>
                 </form>
@@ -103,47 +108,33 @@
 
         <div class="wrapper">
             <a href="discover.html" style="--grid-area:cat-sport">
-                <p class="align-right">Modern Homes</p>
-                <img src="images/home.webp" loading="lazy">
+                <p class="align-right">Modern Homes</p><img src="images/home.webp" loading="lazy">
             </a>
             <a href="discover.html" style="--grid-area:cat-tees">
-                <p>Luxury Villas</p>
-                <img src="images/villa.webp" loading="lazy">
+                <p>Luxury Villas</p><img src="images/villa.webp" loading="lazy">
             </a>
             <a href="discover.html" style="--grid-area:cat-hoodies">
-                <p>Spacious Warehouses</p>
-                <img src="images/warehouse.webp" loading="lazy">
+                <p>Spacious Warehouses</p><img src="images/warehouse.webp" loading="lazy">
             </a>
             <a href="discover.html" style="--grid-area:cat-ladies-shirts">
-                <p>Commercial Properties</p>
-                <img src="images/commercial.webp" loading="lazy">
+                <p>Commercial Properties</p><img src="images/commercial.webp" loading="lazy">
             </a>
             <a href="discover.html" style="--grid-area:cat-youth">
-                <p>Cozy Apartments</p>
-                <img src="images/apartment.webp" loading="lazy">
+                <p>Cozy Apartments</p><img src="images/apartment.webp" loading="lazy">
             </a>
             <a href="discover.html" style="--grid-area:cat-kids">
-                <p>Family Living</p>
-                <img src="images/ville2.webp"
-                    loading="lazy">
+                <p>Family Living</p><img src="images/ville2.webp" loading="lazy">
             </a>
             <a href="discover.html" style="--grid-area:cat-cologne">
-                <p class="align-right">Urban Lofts</p>
-                <img src="images/apart5.webp"
-                    loading="lazy">
+                <p class="align-right">Urban Lofts</p><img src="images/apart5.webp" loading="lazy">
             </a>
             <a href="discover.html" style="--grid-area:cat-mens-shirts">
-                <p>Prime Locations</p>
-                <img src="images/ville.webp"
-                    loading="lazy">
+                <p>Prime Locations</p><img src="images/ville.webp" loading="lazy">
             </a>
             <a href="discover.html" style="--grid-area:cat-intimate">
-                <p>Rental Units</p>
-                <img src="images/apartment.webp"loading="lazy">
+                <p>Rental Units</p><img src="images/apartment.webp" loading="lazy">
             </a>
-            <a href="#" style="--grid-area:banner" class="banner">
-                HOMERIX
-            </a>
+            <a href="#" style="--grid-area:banner" class="banner">HOMERIX</a>
         </div>
 
         <section id="info-cards" class="info-cards fade-in">
@@ -183,8 +174,7 @@
 
         <section id="testimonials" class="testimonials fade-in">
             <h2 class="section-title">What Our Clients Say</h2>
-            <div class="testimonial-container">
-            </div>
+            <div class="testimonial-container"></div>
             <div class="testimonial-buttons">
                 <button id="prev-btn" aria-label="Previous Testimonial">&#10094;</button>
                 <button id="next-btn" aria-label="Next Testimonial">&#10095;</button>
@@ -226,7 +216,6 @@
             <p>&copy; <span id="year"></span> Homerix Real Estate Limited. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 
 </html>

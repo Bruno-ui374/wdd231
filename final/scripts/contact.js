@@ -1,10 +1,11 @@
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementById('main-header');
     const hamburger = document.getElementById('hamburger');
     const menu = document.getElementById('main-menu');
     const contactForm = document.getElementById('contact-form');
 
-    // --- Sticky Header ---
     if (header) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 30) {
@@ -19,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menu) {
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
         menu.querySelectorAll('a').forEach(link => {
-            if (link.getAttribute('href').endsWith(currentPage)) {
+            if (link.getAttribute('href') === currentPage) {
                 link.classList.add('active');
             }
         });
@@ -27,39 +28,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Hamburger Menu Logic ---
     if (hamburger && menu) {
-        const closeMenu = () => {
-            menu.classList.remove('show');
-            hamburger.classList.remove('open');
-        };
         hamburger.addEventListener('click', (e) => {
             e.stopPropagation();
             menu.classList.toggle('show');
             hamburger.classList.toggle('open');
         });
+
         document.addEventListener('click', (e) => {
             if (menu.classList.contains('show') && !menu.contains(e.target) && !hamburger.contains(e.target)) {
-                closeMenu();
+                menu.classList.remove('show');
+                hamburger.classList.remove('open');
             }
         });
     }
 
-    // --- Form Submission to Thank You Page ---
+   
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
-            e.preventDefault(); // Prevent the default form submission
-
-            // Get data from the form
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                message: document.getElementById('message').value
-            };
-
-            // Store data in sessionStorage to pass to the next page
-            sessionStorage.setItem('contactFormData', JSON.stringify(formData));
-
-            // Redirect to the thank you page
-            window.location.href = 'thankyou.html';
+            e.preventDefault(); 
+            const formData = new FormData(contactForm);
+            const params = new URLSearchParams(formData);
+            // Redirect to the thank you page with the data in the URL
+            window.location.href = `thankyou.html?${params.toString()}`;
         });
     }
 
@@ -71,25 +61,24 @@ document.addEventListener('DOMContentLoaded', () => {
         let slideInterval;
 
         const showTestimonial = (index) => {
-            // Remove active class from current testimonial
             const currentActive = testimonialContainer.querySelector('.testimonial.active');
             if (currentActive) {
                 currentActive.classList.remove('active');
             }
-
-            // Create and show the new testimonial after a short delay for fade-out
             setTimeout(() => {
-                const testimonial = testimonials[index];
-                testimonialContainer.innerHTML = `
-                    <div class="testimonial active">
-                        <p class="testimonial-quote">"${testimonial.quote}"</p>
-                        <p class="testimonial-author">
-                            ${testimonial.author}
-                            <span>${testimonial.title}</span>
-                        </p>
-                    </div>
-                `;
-            }, 100); // Small delay to allow fade out
+                if (testimonials[index]) {
+                    const testimonial = testimonials[index];
+                    testimonialContainer.innerHTML = `
+                        <div class="testimonial active">
+                            <p class="testimonial-quote">"${testimonial.quote}"</p>
+                            <p class="testimonial-author">
+                                ${testimonial.author}
+                                <span>${testimonial.title}</span>
+                            </p>
+                        </div>
+                    `;
+                }
+            }, 100);
         };
 
         const nextTestimonial = () => {
@@ -103,31 +92,32 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const startSlider = () => {
-            clearInterval(slideInterval); // Clear any existing interval
-            slideInterval = setInterval(nextTestimonial, 5000); // Change slide every 5 seconds
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextTestimonial, 5000);
         };
 
-        // Fetch testimonials from JSON file
         fetch('data/testimonials.json')
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok for testimonials.json');
+                }
+                return response.json();
+            })
             .then(data => {
                 testimonials = data;
                 if (testimonials.length > 0) {
                     showTestimonial(currentIndex);
                     startSlider();
-
-                    // Add event listeners for manual controls
                     const prevBtn = document.getElementById('prev-btn');
                     const nextBtn = document.getElementById('next-btn');
-
                     if (prevBtn && nextBtn) {
                         prevBtn.addEventListener('click', () => {
                             prevTestimonial();
-                            startSlider(); // Reset interval on manual change
+                            startSlider();
                         });
                         nextBtn.addEventListener('click', () => {
                             nextTestimonial();
-                            startSlider(); // Reset interval on manual change
+                            startSlider();
                         });
                     }
                 }
