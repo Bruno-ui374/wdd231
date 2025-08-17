@@ -1,0 +1,136 @@
+:root {
+    --gold: #c59b2d;
+    --dark-bg: #0b0b0b;
+    --text-light: #eee;
+    --text-muted: #aaa;
+    --border-color: #222;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #010101;
+    color: var(--text-light);
+    margin: 0;
+    padding: 2rem;
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--dark-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem 3rem;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    border-left: 4px solid var(--gold);
+    padding-left: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+p,
+li {
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+    list-style: square;
+}
+
+.color-palette {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.color-swatch {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.typography-section span {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.mockups {
+    display: grid;
+    /* Create two columns, each with a max width of 300px */
+    grid-template-columns: repeat(2, minmax(0, 300px));
+    gap: 2rem;
+    margin-top: 1.5rem;
+    /* Center the grid container if there's extra space */
+    justify-content: center;
+}
+
+.mockups img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.mockups p {
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .mockups {
+        /* On smaller screens, stack to a single column */
+        grid-template-columns: 1fr;
+    }
+}
